@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Contact Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <div class="card">
+            <header>
+                <h1>Contacts</h1>
+                <p class="subtitle">Manage your network seamlessly</p>
+            </header>
+
+            <form id="contactForm" class="form">
+                <input type="text" id="name" placeholder="Full Name" required>
+                <input type="email" id="email" placeholder="Email (Optional)">
+                <input type="tel" id="phone" placeholder="Phone Number" required>
+                <button type="submit">Add Contact</button>
+            </form>
+
+            <div class="search-container">
+                <input type="text" id="search" class="search" placeholder="Search by name...">
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th style="text-align: right;">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="contactList"></tbody>
+                </table>
+                <div id="noResults" class="hidden">No contacts found.</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
